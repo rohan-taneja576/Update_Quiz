@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+ 
+</style>
+
+<input id="submit" type="submit" name="submit" value="Next" onclick="nextques()"/> 
+<p id="demo"></p>
+<script>
+var i=0;
+var abc;
+var arr=[]
+var quiz=[
+    {
+        ques:"abc"
+    },
+    {
+        ques:"xyz"
+    },
+    {
+        ques:"xyz12"
+    }
+]
+demo.innerHTML=quiz[i].ques;
+
+function nextques(){   
+    //  abc = quiz.forEach((item,index) => { 
+    //    for (var i=0;i<quiz.length;i++){
+    //        arr.push(
+    //            document.getElementById('demo').innerHTML = item[i].ques
+    //        )
+    //    }
+    //  }) 
+    var a = i++;   
+    demo.innerHTML=quiz[a].ques;     
+}
+</script>
+
+</body>
+</html>
